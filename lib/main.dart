@@ -106,7 +106,10 @@ class _HomePageState extends State<HomePage> {
             key: Key(item.id.toString()),
             background: Container(
               color: Colors.red.withOpacity(0.5),
-              child: Icon(Icons.remove_circle),
+              child: Icon(
+                Icons.remove_circle,
+                color: Colors.white,
+              ),
             ),
             onDismissed: (direction) {
               remove(index);
